@@ -1,0 +1,395 @@
+/*Global*/
+
+body {
+  margin: 0px auto;
+  padding: 0;
+  text-align: center;
+  background: #DCDCDC;
+}
+
+/*form*/
+
+form label, form input {
+  width: 150px;
+  padding: 5px;
+  margin: 5px;
+}
+
+main{
+  display:flex;
+  justify-content: center;
+  background-image: url(./img/mainBckGnd7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1%;
+  min-height: calc(100vh - 20px);
+  margin:10px;
+}
+
+main section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  min-width: 750px;
+  border-radius: 1%;
+}
+
+main section button {
+  font-size: 16px;
+  color: white;
+  background-color: #D2691E;
+  text-align: center;
+  border-radius: 10%;
+  border-color: orange;
+}
+
+main section button:hover {
+  border-color: white;
+  background-color: #A0522D;
+}.resultWindow table, .resultWindow th, .resultWindow td {
+  border: 1px solid #ffffff;
+  font-size: 20px;
+  margin: 10px auto;
+  text-align: center;
+  min-width: 10vw; }
+.spellModWin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  width: 350px;
+  height: 350px;
+  background: #FFF8DC;
+  opacity: 0.9;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". taskDif0 ." " taskDif1 . taskDif2" ". taskDif3 ."; }
+  .spellModWin [data-task-dif='0'] {
+    grid-area: taskDif0; }
+  .spellModWin [data-task-dif='1'] {
+    grid-area: taskDif1; }
+  .spellModWin [data-task-dif='2'] {
+    grid-area: taskDif2; }
+  .spellModWin [data-task-dif='3'] {
+    grid-area: taskDif3; }
+  .spellModWin button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-width: thick;
+    font-size: 16px;
+    color: white;
+    background-color: #D2691E;
+    text-align: center;
+    border-radius: 10%;
+    border-color: orange; }
+  .spellModWin button:hover {
+    border-color: white;
+    background-color: #A0522D; }
+  .spellModWin img {
+    height: 70px;
+    margin: 0 auto; }
+[data-status="hidden"] {
+  display: none; }
+
+[data-status="active"] {
+  display: flex; }
+
+.taskWindow {
+  background-image: url(./img/task-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center; }
+  .taskWindow button {
+    font-size: 16px;
+    color: white;
+    background-color: #D2691E;
+    text-align: center;
+    border-radius: 10%;
+    border-color: orange; }
+  .taskWindow button:hover {
+    border-color: white;
+    background-color: #A0522D; }
+  .taskWindow h2 {
+    margin: 20px 0px;
+    padding: 30px;
+    font-style: italic;
+    font-size: 64px;
+    color: #607aa5;
+    text-shadow: 10px 10px 20px white;
+    border: solid #607aa5 10px;
+    border-radius: 20%; }
+  .taskWindow button, .taskWindow input {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-size: 32px;
+    border-radius: 3%;
+    margin: 10px auto; }
+  .taskWindow label {
+    color: white;
+    font-size: 32px; }
+  .taskWindow ul {
+    padding-left: 0; }
+[data-status="hidden"] {
+  display: none; }
+
+[data-status="active"] {
+  display: flex; }
+
+.taskWindow {
+  background-image: url(./img/task-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center; }
+  .taskWindow button {
+    font-size: 16px;
+    color: white;
+    background-color: #D2691E;
+    text-align: center;
+    border-radius: 10%;
+    border-color: orange; }
+  .taskWindow button:hover {
+    border-color: white;
+    background-color: #A0522D; }
+  .taskWindow h2 {
+    margin: 20px 0px;
+    padding: 30px;
+    font-style: italic;
+    font-size: 64px;
+    color: #607aa5;
+    text-shadow: 10px 10px 20px white;
+    border: solid #607aa5 10px;
+    border-radius: 20%; }
+  .taskWindow button, .taskWindow input {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-size: 32px;
+    border-radius: 3%;
+    margin: 10px auto; }
+  .taskWindow label {
+    color: white;
+    font-size: 32px; }
+  .taskWindow ul {
+    padding-left: 0; }
+[data-status="hidden"] {
+  display: none; }
+
+[data-status="active"] {
+  display: flex; }
+
+.taskWindow {
+  background-image: url(./img/task-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center; }
+  .taskWindow button {
+    font-size: 16px;
+    color: white;
+    background-color: #D2691E;
+    text-align: center;
+    border-radius: 10%;
+    border-color: orange; }
+  .taskWindow button:hover {
+    border-color: white;
+    background-color: #A0522D; }
+  .taskWindow h2 {
+    margin: 20px 0px;
+    padding: 30px;
+    font-style: italic;
+    font-size: 64px;
+    color: #607aa5;
+    text-shadow: 10px 10px 20px white;
+    border: solid #607aa5 10px;
+    border-radius: 20%; }
+  .taskWindow button, .taskWindow input {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-size: 32px;
+    border-radius: 3%;
+    margin: 10px auto; }
+  .taskWindow label {
+    color: white;
+    font-size: 32px; }
+  .taskWindow ul {
+    padding-left: 0; }
+  .taskWindow label {
+    color: white;
+    font-size: 32px; }
+  .taskWindow .scramble-word {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    list-style-type: none; }
+  .taskWindow .tile {
+    margin: 0;
+    background-color: green;
+    border-radius: 10px;
+    width: 66px;
+    height: 65px;
+    font-size: 48px;
+    padding-top: 10px;
+    margin: 5px;
+    cursor: pointer; }
+  .taskWindow .task-body {
+    border: 5px solid black;
+    margin: 0; }
+  .taskWindow ul {
+    padding-left: 0; }
+var map = {
+	"./mainBckGnd0.png": 40,
+	"./mainBckGnd1.png": 39,
+	"./mainBckGnd2.png": 38,
+	"./mainBckGnd3.png": 37,
+	"./mainBckGnd4.png": 36,
+	"./mainBckGnd5.png": 35,
+	"./mainBckGnd6.png": 34,
+	"./mainBckGnd7.png": 52,
+	"./mainBckGnd8.png": 33
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 45;var map = {
+	"./attack_wizard_fire1.png": 27,
+	"./attack_wizard_fire2.png": 26,
+	"./attack_wizard_spell1.png": 25,
+	"./attack_wizard_spell2.png": 24,
+	"./wizard_body.png": 23,
+	"./wizard_head.png": 22,
+	"./wizard_legs.png": 21
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 44;[data-status = "hidden"]{
+    display: none;
+  }
+  [data-status = "active"]{
+    display: flex;
+  }var map = {
+	"./enemies/attack_enemy_0.png": 20,
+	"./enemies/attack_enemy_1.png": 19,
+	"./enemies/attack_enemy_2.png": 18,
+	"./enemies/attack_enemy_5.png": 17,
+	"./enemies/body_0.png": 16,
+	"./enemies/body_1.png": 15,
+	"./enemies/body_2.png": 14,
+	"./enemies/head_0.png": 13,
+	"./enemies/head_1.png": 12,
+	"./enemies/head_2.png": 11,
+	"./enemies/legs_0.png": 10,
+	"./enemies/legs_1.png": 9,
+	"./enemies/legs_2.png": 8,
+	"./fireboll_1.png": 32,
+	"./fireboll_2.png": 31,
+	"./fireboll_3.png": 30,
+	"./heart.png": 29,
+	"./wizard/attack_wizard_fire1.png": 27,
+	"./wizard/attack_wizard_fire2.png": 26,
+	"./wizard/attack_wizard_spell1.png": 25,
+	"./wizard/attack_wizard_spell2.png": 24,
+	"./wizard/wizard_body.png": 23,
+	"./wizard/wizard_head.png": 22,
+	"./wizard/wizard_legs.png": 21
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 43;var map = {
+	"./attack_enemy_0.png": 20,
+	"./attack_enemy_1.png": 19,
+	"./attack_enemy_2.png": 18,
+	"./attack_enemy_5.png": 17,
+	"./body_0.png": 16,
+	"./body_1.png": 15,
+	"./body_2.png": 14,
+	"./head_0.png": 13,
+	"./head_1.png": 12,
+	"./head_2.png": 11,
+	"./legs_0.png": 10,
+	"./legs_1.png": 9,
+	"./legs_2.png": 8
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 42;

@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Cagliostro";
+  src: url(653ca3aa9e78f0b6faca8eda986c94ef.ttf) format("truetype");
+}
+html {
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size: 2.5em;
+}
+body{
+  display: grid;
+  font-family: "Cagliostro";
+  font-size: 25px;
+  background-color: #5eb563;
+}
+ul{
+  list-style-type: none;
+}
+button:focus {
+  outline:0;
+}
+.play {
+  width: 200px;
+  height: 40px;
+  background-color: #b3ffb3;
+  border: none;
+  font-size: 24px;
+  margin: 15px auto;
+  cursor: pointer;
+  color: inherit;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.play:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.play:hover{
+  font-weight: bolder;
+  background-color: #008000;
+}
+.header, .section-header {
+  height: 40vh;
+}
+
+.header{
+  display: grid;
+  align-content: center;
+}
+.section-header {
+  height: 25vh;
+  font-size: 1.7em;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+.section-header:hover{
+  cursor: pointer;
+}
+.instructions{
+  display: grid;
+  align-content: center;
+  background: url(./img/pattern1.jpg);
+}
+.instructions-details{
+  background: url(./img/pattern1.jpg);
+  padding: 20px 0;
+  display: none;
+}
+.preview{
+  display: grid;
+  align-content: center;
+  background: url(./img/pattern2.jpg);
+}
+.preview-details{
+  background: url(./img/pattern2.jpg);
+  padding: 20px 0;
+  display: none;
+}
+.csreenshot {
+  width: 500px;
+  height: 228px;
+  overflow: hidden;
+  padding: 5px;
+}
+.game-name{
+  font-size: 1.5em;
+}
+.game-name::after{
+  content: url(./img/icon.png);
+}
+
